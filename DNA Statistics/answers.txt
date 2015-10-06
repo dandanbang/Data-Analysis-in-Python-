@@ -1,0 +1,73 @@
+Name: Daniel Wei-Hsuan. Chen
+CSE 140
+Homework 2
+
+For each problem that requires a written answer, write (or copy-and-paste)
+your answers in this file.  When you are done, you should have replaced all
+the ellipses (the three dots) with your answers.
+
+At the end, you will turn in this file along with your modified
+dna_analysis.py program.
+
+
+Problem 1:
+
+(No answers in this file.)
+
+Problem 2:
+
+GC-content: 0.430599870611
+
+Problem 3:
+
+If we comment out seq = “” and linenum = 0 then we will run into an error as below:
+Traceback (most recent call last):
+  File "dna_analysis.py", line 38, in <module>
+    linenum = linenum + 1
+NameError: name 'linenum' is not defined
+d-140-142-178-175:homework2 dandanban$ 
+
+This variable is indicating that linenum is not defined because we have not declared the variable first. So when the first for loop that calls the variable linenum, it will run into the NameError because it can’t find such variable being stored/declared. 
+
+If we comment out gc_count = 0 then we will run into a similar problem which is as below: 
+
+Traceback (most recent call last):
+  File "dna_analysis.py", line 69, in <module>
+    gc_count = gc_count + 1
+NameError: name 'gc_count' is not defined
+
+This is basically the same error as the previous one since the program can not find a variable being declared when it processes the variable. For the program to use a variable, the variable has to be declared in Python. 
+
+Problem 4:
+
+AT-content: 0.569400129389
+
+Problem 5:
+
+G count: 5738773
+C count: 5879128
+A count: 7701287
+T count: 7661547
+
+Problem 6:
+
+The file test-high-gc1.fastq has two metrics that are different.
+The sum count is 39840 while the total count is 40000.
+
+Why do they differ?
+It differs because there’s another variable called N in the sequence of nucleotides besides A, C, G, and T. Sum count is calculated only by adding the counts of A, C, G, and T. But Total count is counting every variables in the sequence, including N.
+
+Which metric can be used as denominator and which cannot?
+At first, the GC content is wrongly calculated because we’re using total count. It gives us an incorrect output because it’s taking into account of variable N. We should only use Sum Count instead of Total count for computing GC content or AT content. Since the correct formula for GC content is (G+C)/(A+C+G+T) and not (G+C)/(A+C+G+T+N). So we should not include N in our calculation(Or any variable other than A, C, G, and T).  
+
+Problem 7:
+
+AC/GC Ratio: 1.32234161747
+
+Problem 8:
+
+GC Classification: moderate GC content
+
+Collaboration:
+
+I did not collaborate with anyone. 

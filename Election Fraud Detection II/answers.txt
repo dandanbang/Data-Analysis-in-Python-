@@ -1,0 +1,34 @@
+Name: Daniel Wei-Hsuan Chen
+CSE 140
+Homework 7
+
+For each problem that requires a written answer, write (or copy-and-paste)
+your answers in this file.  When you are done, you should have replaced all
+the ellipses (the three dots) with your answers.
+
+Answer to Problem 7:
+
+The output from the program is below:
+	2009 Iranian election MSE: 0.000739583333333
+	Quantity of MSEs larger than or equal to the 2009 Iranian election MSE: 393
+	Quantity of MSEs smaller than the 2009 Iranian election MSE: 9607
+	2009 Iranian election null hypothesis rejection level p: 0.0393
+The data suggests the Iranian election results are fraudulent. The Iranian dataset is
+highly unlikely to be genuine. We are 96.07% confident that the data is fraudulent. More
+precisely, we say we reject the null hypothesis at the p = .0393 level. This means that only about 3.93% of genuine elections would be as different from the uniform distribution as the Iranian election was. The result has passed the p=0.05 threshold and thus meaning the result is statistical significant.
+
+Answer to Problem 8:
+
+The output from the program is below:
+	2008 United States election MSE: 0.000141002587606
+	Quantity of MSEs larger than or equal to the 2008 United States election MSE: 4885
+	Quantity of MSEs smaller than the 2008 United States election MSE: 5115
+	2008 United States election null hypothesis rejection level p: 0.4885
+The data suggests that 51.15% of genuine election were as different from the uniform distribution as the United States election was. This is not surprising at all; it provides no evidence regarding the null hypothesis that the United States election is not fraudulent. The p-value has not passed the threshold of p=0.05 and the result is not
+statistically significant.
+
+Collaboration:
+
+I did not collaborate with anyone. 
+
+
